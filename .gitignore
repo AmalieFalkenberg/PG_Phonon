@@ -1,2 +1,4 @@
 # All file types that should not be included in github repo
 *.dat
+*.sim
+Eigen_Amalie_og_Frida/Eigen_Phononkomponent/PH*/
