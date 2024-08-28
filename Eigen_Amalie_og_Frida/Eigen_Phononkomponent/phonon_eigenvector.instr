@@ -230,12 +230,15 @@ COMPONENT e_monitor_beforeana = E_monitor(
     Emax=25)
 AT (0, 0, 0.001) RELATIVE PREVIOUS
 
-COMPONENT analyzer = Monochromator_flat(
+COMPONENT analyzer = Monochromator_curved(
     zwidth=4*width,
     yheight=4*width,
     mosaicv=30,
     mosaich=30,
-    Q=QM
+    Q=QM, 
+    RV = 0,
+    RH = 0,
+    order = 1
     )
 AT (0, 0, 0.1) RELATIVE PREVIOUS
 ROTATED (0, thetaA, 0) RELATIVE PREVIOUS

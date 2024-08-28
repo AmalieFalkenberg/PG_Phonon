@@ -1,6 +1,6 @@
 begin instrument:
   Creator: mcstas 3.2
-  Source: phonon_eigenvector.instr
+  Source: phonon_eigenvector_first_order.instr
   Parameters:  E
   Trace_enabled: no
   Default_main: yes
@@ -8,8 +8,8 @@ begin instrument:
 end instrument
 
 begin simulation
-Date: Sun Mar 03 20 22 2024
-Ncount: 10000000
+Date: Tue Jun 25 19 54 2024
+Ncount: 1000000
 Numpoints: 2
 Param: E = 0, E = 20
 end simulation

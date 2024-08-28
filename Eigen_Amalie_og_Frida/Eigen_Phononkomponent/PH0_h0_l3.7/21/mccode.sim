@@ -1,10 +1,10 @@
 McStas simulation description file for template_body_simple.
-Date:    Tue Mar  5 00:25:47 2024
+Date:    Tue Jun 25 20:40:53 2024
 Program: 
 
 begin instrument: template_body_simple
   File: PH0_h0_l3.7/21/mccode
-  Source: phonon_eigenvector.instr
+  Source: phonon_eigenvector_first_order.instr
   Parameters:  E(double) Ef(double) Dlambda(double) h(double) l(double) dA3(double) Temp(double) width(double) coll(double) phononmode(int) E_steps_high(int) E_steps_low(int) Verbose(int) DISP(int)
   Trace_enabled: yes
   Default_main: yes
@@ -15,11 +15,11 @@ begin simulation: PH0_h0_l3.7/21
   Format: McCode with text headers
   URL: http://www.mccode.org
   Creator: 
-  Instrument: phonon_eigenvector.instr
-  Ncount: 10000000
+  Instrument: phonon_eigenvector_first_order.instr
+  Ncount: 1000000
   Trace: no
   Gravitation: no
-  Seed: 1709594747065896
+  Seed: 1719340853736814
   Directory: PH0_h0_l3.7/21
   Nodes: 6
   Param: E=10.5
@@ -39,17 +39,17 @@ begin simulation: PH0_h0_l3.7/21
 end simulation
 
 begin data
-  Date: Tue Mar  5 01:00:49 2024 (1709596849)
+  Date: Tue Jun 25 20:41:40 2024 (1719340900)
   type: array_1d(200)
-  Source: template_body_simple (phonon_eigenvector.instr)
+  Source: template_body_simple (phonon_eigenvector_first_order.instr)
   component: l_monitor_before_mono
   position: 0 0 7
   title: Wavelength monitor
-  Ncount: 19999992
+  Ncount: 1999992
   filename: lbeforemono.dat
-  statistics: X0=1.51677; dX=0.0299051;
-  signal: Min=0; Max=4.36816e+06; Mean=104892;
-  values: 2.09785e+07 6640.05 1e+07
+  statistics: X0=1.51678; dX=0.0299267;
+  signal: Min=0; Max=4.36076e+06; Mean=104890;
+  values: 2.0978e+07 20997.2 999996
   xvar: L
   yvar: (I,I_err)
   xlabel: Wavelength [AA]
@@ -59,17 +59,17 @@ begin data
 end data
 
 begin data
-  Date: Tue Mar  5 01:00:50 2024 (1709596850)
+  Date: Tue Jun 25 20:41:40 2024 (1719340900)
   type: array_1d(300)
-  Source: template_body_simple (phonon_eigenvector.instr)
+  Source: template_body_simple (phonon_eigenvector_first_order.instr)
   component: l_monitor_before_sample
   position: 0.396781 0 8.30781
   title: Wavelength monitor
-  Ncount: 19999992
+  Ncount: 1999992
   filename: L_beforesampla.dat
-  statistics: X0=1.51773; dX=0.0135479;
-  signal: Min=0; Max=21589.3; Mean=3519.18;
-  values: 1.05575e+06 1257.61 849397
+  statistics: X0=1.51776; dX=0.0135522;
+  signal: Min=0; Max=22451.2; Mean=3515.78;
+  values: 1.05473e+06 3973.9 84760
   xvar: L
   yvar: (I,I_err)
   xlabel: Wavelength [AA]
@@ -79,17 +79,17 @@ begin data
 end data
 
 begin data
-  Date: Tue Mar  5 01:00:50 2024 (1709596850)
+  Date: Tue Jun 25 20:41:41 2024 (1719340901)
   type: array_1d(100)
-  Source: template_body_simple (phonon_eigenvector.instr)
+  Source: template_body_simple (phonon_eigenvector_first_order.instr)
   component: e_monitor_before_sample
   position: 0.40119 0 8.31679
   title: Energy monitor
-  Ncount: 19999992
+  Ncount: 1999992
   filename: E_before_sample.dat
-  statistics: X0=35.5214; dX=0.634385;
-  signal: Min=0; Max=27664; Mean=10557.5;
-  values: 1.05575e+06 1257.61 849397
+  statistics: X0=35.5203; dX=0.6345;
+  signal: Min=0; Max=28278.4; Mean=10547.3;
+  values: 1.05473e+06 3973.9 84760
   xvar: E
   yvar: (I,I_err)
   xlabel: Energy [meV]
@@ -99,17 +99,17 @@ begin data
 end data
 
 begin data
-  Date: Tue Mar  5 01:00:51 2024 (1709596851)
+  Date: Tue Jun 25 20:41:41 2024 (1719340901)
   type: array_2d(200, 200)
-  Source: template_body_simple (phonon_eigenvector.instr)
+  Source: template_body_simple (phonon_eigenvector_first_order.instr)
   component: PSD_monitor_before_sample
   position: 0.405598 0 8.32577
   title: PSD monitor
-  Ncount: 19999992
+  Ncount: 1999992
   filename: PSD_before_sample.dat
-  statistics: X0=-0.00797436; dX=0.382553; Y0=-0.000288459; dY=0.224584;
-  signal: Min=0; Max=4745.12; Mean=26.3938;
-  values: 1.05575e+06 1257.61 849397
+  statistics: X0=-0.00736666; dX=0.382701; Y0=0.000751863; dY=0.225629;
+  signal: Min=0; Max=4862.65; Mean=26.3683;
+  values: 1.05473e+06 3973.9 84760
   xvar: X 
   yvar: Y 
   xlabel: X position [cm]
@@ -121,17 +121,17 @@ begin data
 end data
 
 begin data
-  Date: Tue Mar  5 01:01:21 2024 (1709596881)
+  Date: Tue Jun 25 20:41:41 2024 (1719340901)
   type: array_2d(200, 200)
-  Source: template_body_simple (phonon_eigenvector.instr)
+  Source: template_body_simple (phonon_eigenvector_first_order.instr)
   component: psd_monitoraftersample
   position: -0.0152316 0 9.2875
   title: PSD monitor
-  Ncount: 19999992
+  Ncount: 1999992
   filename: psdaftersample.dat
-  statistics: X0=-0.00173067; dX=0.140955; Y0=0.000332057; dY=0.143793;
-  signal: Min=0; Max=0.000680242; Mean=1.50628e-06;
-  values: 0.060251 0.00026186 246849
+  statistics: X0=0.00208885; dX=0.140892; Y0=-7.14302e-05; dY=0.142586;
+  signal: Min=0; Max=0.00082542; Mean=1.48019e-06;
+  values: 0.0592076 0.000822244 24585
   xvar: X 
   yvar: Y 
   xlabel: X position [cm]
@@ -143,17 +143,17 @@ begin data
 end data
 
 begin data
-  Date: Tue Mar  5 01:01:49 2024 (1709596909)
+  Date: Tue Jun 25 20:41:41 2024 (1719340901)
   type: array_1d(250)
-  Source: template_body_simple (phonon_eigenvector.instr)
+  Source: template_body_simple (phonon_eigenvector_first_order.instr)
   component: e_monitor_beforeana
   position: -0.0161438 0 9.28928
   title: Energy monitor
-  Ncount: 19999992
+  Ncount: 1999992
   filename: Ebeforeana.dat
-  statistics: X0=15.4012; dX=2.37743;
-  signal: Min=0; Max=0.000400142; Mean=7.14686e-06;
-  values: 0.00178671 8.62742e-06 122804
+  statistics: X0=15.3855; dX=2.41507;
+  signal: Min=0; Max=0.000371378; Mean=7.01066e-06;
+  values: 0.00175267 2.68439e-05 12328
   xvar: E
   yvar: (I,I_err)
   xlabel: Energy [meV]
@@ -163,13 +163,13 @@ begin data
 end data
 
 begin data
-  Date: Tue Mar  5 01:01:50 2024 (1709596910)
+  Date: Tue Jun 25 20:41:41 2024 (1719340901)
   type: array_1d(250)
-  Source: template_body_simple (phonon_eigenvector.instr)
+  Source: template_body_simple (phonon_eigenvector_first_order.instr)
   component: Emon_after_analyzer
   position: 0.0107562 0 10.3766
   title: Energy monitor
-  Ncount: 19999992
+  Ncount: 1999992
   filename: Eafteranalyzer.dat
   statistics: X0=0; dX=0;
   signal: Min=0; Max=0; Mean=0;
@@ -183,13 +183,13 @@ begin data
 end data
 
 begin data
-  Date: Tue Mar  5 01:01:50 2024 (1709596910)
+  Date: Tue Jun 25 20:41:41 2024 (1719340901)
   type: array_2d(128, 128)
-  Source: template_body_simple (phonon_eigenvector.instr)
+  Source: template_body_simple (phonon_eigenvector_first_order.instr)
   component: psd_detector
   position: 0.0108286 0 10.3776
   title: PSD monitor
-  Ncount: 19999992
+  Ncount: 1999992
   filename: PSDdetector.dat
   statistics: X0=0; dX=0; Y0=0; dY=0;
   signal: Min=0; Max=0; Mean=0;
